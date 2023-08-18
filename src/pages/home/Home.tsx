@@ -1,5 +1,7 @@
-import TinyBarChart from "../../components/barChart/TinyBarChart";
+import TinyBarChart from "../../components/barChartBox/TinyBarChart";
+import BigChartBox from "../../components/bigChartBox/BigChartBox";
 import TinyLineChart from "../../components/lineChart/TinyLineChart";
+import PieChartBox from "../../components/pieChartBox/PieChartBox";
 import TopBox from "../../components/topbox/TopBox";
 import {
   chartBoxUser,
@@ -23,14 +25,18 @@ const Home = () => {
       <div className="box box3">
         <TinyLineChart {...chartBoxProduct} />
       </div>
-      <div className="box box4">Box4</div>
+      <div className="box box4">
+        <PieChartBox />
+      </div>
       <div className="box box5">
         <TinyLineChart {...chartBoxRevenue} />
       </div>
       <div className="box box6">
         <TinyLineChart {...chartBoxConversion} />
       </div>
-      <div className="box box7">Box7</div>
+      <div className="box box7">
+        <BigChartBox />
+      </div>
       <div className="box box8">
         <TinyBarChart {...barChartBoxVisit} />
       </div>
