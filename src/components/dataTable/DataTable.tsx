@@ -1,9 +1,4 @@
-import {
-  DataGrid,
-  GridColDef,
-  GridToolbar,
-  GridValueGetterParams,
-} from "@mui/x-data-grid";
+import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 import "./dataTable.scss";
 import { Link } from "react-router-dom";
 
@@ -13,7 +8,8 @@ type Props = {
   slug: string;
 };
 
-const handleDelete = (id: number) => {};
+// const handleDelete = (id: number) => {};
+const handleDelete = () => {};
 
 const DataTable = ({ columns, rows, slug }: Props) => {
   // action column
